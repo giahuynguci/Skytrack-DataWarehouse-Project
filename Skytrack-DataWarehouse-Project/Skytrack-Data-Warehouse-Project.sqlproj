@@ -67,7 +67,7 @@
     <Build Include="Tables\staging_seat.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Schema\BULK_Insert_To_stgAirline.sql" />
+    <PostDeploy Include="Schema\BULK_Insert_To_stgAirline.sql" />
     <None Include="Schema\BULK_Insert_To_stgAirport.sql" />
     <None Include="Schema\BULK_Insert_To_stgLounge.sql" />
     <None Include="Schema\BULK_Insert_To_StgSeat.sql" />

@@ -68,6 +68,6 @@
     <None Include="Schema\BULK_Insert_To_Stg.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Schema\Transfrom_Data.sql" />
+    <PostDeploy Include="Schema\Transfrom_Data.sql" />
   </ItemGroup>
 </Project>

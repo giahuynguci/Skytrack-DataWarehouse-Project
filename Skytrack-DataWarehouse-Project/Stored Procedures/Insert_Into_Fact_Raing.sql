@@ -102,7 +102,7 @@ AS
            ,ss.[power_supply_rating] as seat_power_supply_rating
            ,ss.[seat_storage_rating] as seat_storage_rating
            ,ss.[recommended] as seat_recommended
-		   ,CEILING(a.[overall_rating]) as [overall_rating]
+		   ,a.[overall_rating]
 		   ,c.overall_recommendation  as overall_recommendation
 FROM [stg].[staging_airline] as sal
 LEFT JOIN [stg].[staging_airport] sap

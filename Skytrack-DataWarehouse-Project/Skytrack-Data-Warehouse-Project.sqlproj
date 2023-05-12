@@ -58,6 +58,7 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="Schema" />
+    <Folder Include="Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\stg.sql" />
@@ -66,8 +67,20 @@
     <Build Include="Tables\staging_lounge.sql" />
     <Build Include="Tables\staging_seat.sql" />
     <None Include="Schema\BULK_Insert_To_Stg.sql" />
+    <Build Include="Tables\dim_airlines.sql" />
+    <Build Include="Schema\dwh.sql" />
+    <Build Include="Tables\dim_airports.sql" />
+    <Build Include="Tables\dim_aircrafts.sql" />
+    <Build Include="Tables\dim_lounges.sql" />
+    <Build Include="Tables\dim_passengers.sql" />
+    <Build Include="Stored Procedures\Insert_InTo_Airline.sql" />
+    <Build Include="Stored Procedures\Insert_Into_Airport.sql" />
+    <Build Include="Stored Procedures\Insert_Into_Aircraft.sql" />
+    <Build Include="Stored Procedures\Insert_Into_Lounge.sql" />
+    <Build Include="Stored Procedures\Insert_Into_Passengers.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Schema\Transfrom_Data.sql" />
+    <None Include="Schema\Transfrom_Data.sql" />
+    <None Include="Schema\Run_PROC.sql" />
   </ItemGroup>
 </Project>

@@ -79,9 +79,11 @@
     <Build Include="Stored Procedures\Insert_Into_Lounge.sql" />
     <Build Include="Stored Procedures\Insert_Into_Passengers.sql" />
     <Build Include="Tables\fact_rating.sql" />
+    <Build Include="Stored Procedures\Insert_Into_Fact_Raing.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Schema\Transfrom_Data.sql" />
-    <PostDeploy Include="Schema\Run_PROC.sql" />
+    <None Include="Schema\Run_PROC.sql" />
+    <None Include="Schema\Run_PROC_Fact.sql" />
   </ItemGroup>
 </Project>

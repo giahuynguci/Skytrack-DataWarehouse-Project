@@ -78,9 +78,10 @@
     <Build Include="Stored Procedures\Insert_Into_Aircraft.sql" />
     <Build Include="Stored Procedures\Insert_Into_Lounge.sql" />
     <Build Include="Stored Procedures\Insert_Into_Passengers.sql" />
+    <Build Include="Tables\fact_rating.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Schema\Transfrom_Data.sql" />
-    <None Include="Schema\Run_PROC.sql" />
+    <PostDeploy Include="Schema\Run_PROC.sql" />
   </ItemGroup>
 </Project>

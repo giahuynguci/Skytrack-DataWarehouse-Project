@@ -59,27 +59,29 @@
     <Folder Include="Tables" />
     <Folder Include="Schema" />
     <Folder Include="Stored Procedures" />
+    <Folder Include="Tables\Stg" />
+    <Folder Include="Tables\Dwh" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\stg.sql" />
-    <Build Include="Tables\staging_airline.sql" />
-    <Build Include="Tables\staging_airport.sql" />
-    <Build Include="Tables\staging_lounge.sql" />
-    <Build Include="Tables\staging_seat.sql" />
     <None Include="Schema\BULK_Insert_To_Stg.sql" />
-    <Build Include="Tables\dim_airlines.sql" />
     <Build Include="Schema\dwh.sql" />
-    <Build Include="Tables\dim_airports.sql" />
-    <Build Include="Tables\dim_aircrafts.sql" />
-    <Build Include="Tables\dim_lounges.sql" />
-    <Build Include="Tables\dim_passengers.sql" />
     <Build Include="Stored Procedures\Insert_InTo_Airline.sql" />
     <Build Include="Stored Procedures\Insert_Into_Airport.sql" />
     <Build Include="Stored Procedures\Insert_Into_Aircraft.sql" />
     <Build Include="Stored Procedures\Insert_Into_Lounge.sql" />
     <Build Include="Stored Procedures\Insert_Into_Passengers.sql" />
-    <Build Include="Tables\fact_rating.sql" />
     <Build Include="Stored Procedures\Insert_Into_Fact_Raing.sql" />
+    <Build Include="Tables\Stg\staging_airline.sql" />
+    <Build Include="Tables\Stg\staging_airport.sql" />
+    <Build Include="Tables\Stg\staging_lounge.sql" />
+    <Build Include="Tables\Stg\staging_seat.sql" />
+    <Build Include="Tables\Dwh\dim_aircrafts.sql" />
+    <Build Include="Tables\Dwh\dim_airlines.sql" />
+    <Build Include="Tables\Dwh\dim_airports.sql" />
+    <Build Include="Tables\Dwh\dim_lounges.sql" />
+    <Build Include="Tables\Dwh\dim_passengers.sql" />
+    <Build Include="Tables\Dwh\fact_rating.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Schema\Transfrom_Data.sql" />

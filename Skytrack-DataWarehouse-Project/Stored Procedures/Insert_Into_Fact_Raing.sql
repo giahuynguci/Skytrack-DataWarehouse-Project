@@ -53,18 +53,18 @@ AS
 			,[overall_rating]
 			,[overall_recommendation])
 ----------------------------------------------------------
-	SELECT		p.[Id_author]
-           ,ap.[airport_id]
-           ,al.[airline_id]
-           ,ac.[aircraft_id]
-           ,l.[lounge_id]
-           ,sap.[date_visit] as airport_visit_date
-           ,sl.[date_visit] as lounge_visit_date
-           ,ss.[date_flown] as flight_date
-			,sal.[review_date] as airline_review_date
-           ,sap.[review_date] as airport_review_date
-           ,sl.[review_date] as lounge_review_date
-           ,ss.[review_date] as seat_review_date
+	SELECT		p.[Id_author] 
+           ,COALESCE(ap.[airport_id], '-1') AS [airport_id]
+           ,COALESCE(al.[airline_id], '-1') AS [airline_id]
+           ,COALESCE(ac.[aircraft_id], '-1') AS [aircraft_id]
+           ,COALESCE(l.[lounge_id], '-1') AS [lounge_id]
+           ,COALESCE(sap.[date_visit], 'N/A') as airport_visit_date
+           ,COALESCE(sl.[date_visit], 'N/A') as lounge_visit_date
+           ,COALESCE(ss.[date_flown], 'N/A') as flight_date
+		   ,COALESCE(sal.[review_date], 'N/A') as airline_review_date
+           ,COALESCE(sap.[review_date], 'N/A') as airport_review_date
+           ,COALESCE(sl.[review_date], 'N/A') as lounge_review_date
+           ,COALESCE(ss.[review_date], 'N/A') as seat_review_date
            ,sal.[overall_rating] as airline_overall_rating
            ,sal.[seat_comfort_rating] as airline_seat_comfort_rating
            ,sal.[cabin_staff_rating] as airline_cabin_staff_rating

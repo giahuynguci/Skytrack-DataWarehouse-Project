@@ -82,10 +82,15 @@
     <Build Include="Tables\Dwh\dim_lounges.sql" />
     <Build Include="Tables\Dwh\dim_passengers.sql" />
     <Build Include="Tables\Dwh\fact_rating.sql" />
+    <Build Include="Tables\Dwh\dim_date.sql" />
+    <Build Include="Stored Procedures\Insert_Into_Date.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Schema\Transfrom_Data.sql" />
-    <None Include="Schema\Run_PROC.sql" />
     <None Include="Schema\Run_PROC_Fact.sql" />
+    <PostDeploy Include="Schema\Run_Insert_Into_Date.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Skytrack-Data-Warehouse-Project.refactorlog" />
   </ItemGroup>
 </Project>
